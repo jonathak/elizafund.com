@@ -25,23 +25,13 @@
     }
 
     .hero {
-  min-height: 100vh;
-  background-image: url("eliza.png?v=5");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #f7f2eb;
-}
-
-@media (max-width: 932px) {
-  .hero {
-    min-height: 0;
-    height: auto;
-    aspect-ratio: 3 / 2;
-    background-size: contain;
-    background-position: center;
-  }
-}
+      min-height: 100vh;
+      background-image: url("eliza.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #f7f2eb;
+    }
     .content {
       max-width: 1080px;
       margin: 0 auto;
@@ -112,17 +102,6 @@
     line-height: 1.6;
 
     max-width: 700px;
-}
-
-@media (max-width: 760px) {
-  .intro,
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .content {
-    padding-top: 52px;
-  }
 }
 
 .positioning {
