@@ -25,14 +25,24 @@
     }
 
     .hero {
-      min-height: 100vh;
-      background-image: url("eliza.png");
-      background-size: contain;
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-color: #f7f2eb;
-    }
+  min-height: 100vh;
+  background-image: url("eliza.png?v=3");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+@media (max-width: 768px) {
+  .hero {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f7f2eb;
+  }
+}
     .content {
       max-width: 1080px;
       margin: 0 auto;
