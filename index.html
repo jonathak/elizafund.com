@@ -25,13 +25,14 @@
     }
 
     .hero {
-      min-height: 100vh;
-      background-image: url("eliza.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-color: #f7f2eb;
-    }
+    background: #f7f2eb;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 @media (max-width: 760px) {
   .hero {
@@ -201,8 +202,9 @@
 </head>
 <body>
   <main>
-    <section class="hero" aria-label="The Eliza Fund brand illustration showing Pittsburgh industrial furnaces"></section>
-
+    <section class="hero">
+       <img src="eliza.png" alt="The Eliza Fund">
+    </section>
     <section class="content">
       <div class="intro">
         <div>
